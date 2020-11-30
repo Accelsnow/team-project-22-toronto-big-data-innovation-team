@@ -144,7 +144,6 @@ class Layout extends React.Component {
             const fileParams = this.state.fileSettings.parseSettings();
             const allFields = ["mean_tt", "min_tt", "pct_5_tt", "pct_10_tt", "pct_15_tt", "pct_20_tt", "pct_25_tt", "pct_30_tt", "pct_35_tt", "pct_40_tt", "pct_45_tt", "pct_50_tt", "pct_55_tt", "pct_60_tt", "pct_65_tt", "pct_70_tt", "pct_75_tt", "pct_80_tt", "pct_85_tt", "pct_90_tt", "pct_95_tt", "std_dev", "min_spd", "mean_spd", "max_spd", "total_length", "days_of_data", "requested_days", "prop_5min"]
             const filledFields = []
-            console.log(allFields.length)
             fileParams["fields"].forEach((choice, i) => {
                 if (choice){
                     filledFields.push(allFields[i])
